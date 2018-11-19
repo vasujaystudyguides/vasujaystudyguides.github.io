@@ -1,0 +1,95 @@
+html{
+	background-image: url(background.png);}
+
+fieldset{
+    border: 2px solid rgb(125,2,217);
+    border-radius: 10px; 
+	background-color: white;
+	width: 70%;
+	top: 0px;
+	margin: 0px auto;
+	position: relative;
+	border-collapse: collapse;
+	}
+img{
+	text-decoration: none;
+	}
+.left{float: left;}
+a:link{color: rgb(125,2,217); text-decoration: none;}
+a:visited{color: rgb(125,2,217); text-decoration: none;}
+a:hover{color: red; text-decoration: none;}
+a:active{color: red; text-decoration: none;}
+table{
+	border-collapse: collapse;
+	color: rgb(63, 97, 74);
+	background-color: rgb(255, 255, 117);
+	}
+body	{
+	font-family: Times New Roman;
+	color: rgb(158,5,209);
+	}
+td, th 	{
+	border: 2px solid rgb(63, 97, 74);
+	padding: 2px;
+	padding: 2px;
+	}
+div{display: inline;}
+h1{font-family: AR Cena; }
+section{}
+article{}
+hr{color: rgb(158,5,209); 
+text-align: center
+}
+h2{}
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+	margin: 0px auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 3px 4px;
+    text-decoration: none;
+    display: block;
+	margin: 0px auto;
+	font-size: 15;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+legend{   
+	border: 2px solid rgb(125,2,217);
+    border-radius: 10px; 
+	background-color: white;
+	width: 70%;
+	top: 0px;
+	margin: 0px auto;
+	position: relative;
+	border-collapse: collapse;
+	}
+section{font-size: 10;}
+ul{list-style: none}
+
+
+
+
+
+
