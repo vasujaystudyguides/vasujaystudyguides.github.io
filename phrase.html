@@ -1,1 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
+<html>
+
+
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<title>Phrase Stuff</title>
+	<style>
+	</style>
+</head>
+
+ 
+<script>
+  var quotes = ["Why is the Amazon rainforest burning? Fire", "Why do you drink black coffee? It doesn't even taste like coffee.",
+  "You can grow bananas?", "How do you get to Hawaii? Build a highway.", "How did coronavirus gey to Italy? Airplane Diffusion",
+  "Tobacco tastes like tobacco"];
+  
+  function getQuote(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  Quote = quotes[arrayNumber];
+  document.getElementById("p1").innerHTML = Quote;
+  getQuote(0,6);
+  }
+
+  
+</script>
+ 
+
+<body>
+
+<fieldset style="text-align: center;">
+	<h1 style="font-size: 100px; margin: 0px auto;">Vasu's &nbsp;Study &nbsp;Guides</h1>
+</fieldset>
+
+<br>
+
+<fieldset style="text-align: center;">
+<h2 style="text-align: center; opacity: 100%:">
+	<a href = "index.html">Home</a> 
+	&nbsp;&nbsp;&nbsp;
+	<a href = "Concord.html">Concord Study Guides</a> 
+	&nbsp;&nbsp;&nbsp;
+	<a href = "PSdupont.html">P.S. DuPont Study Guides</a> 
+</h2>
+</fieldset>
+
+<br>
+
+<fieldset style="text-align: center;">
+<h1 id="APworld">Esanullah Phrase Machine</h1>
+	
+<h3 id="phraseBox">	</h3>
+</fieldset>
+
+<br>
+
+<fieldset style="text-align: center; margin: 0px auto;">
+	<h3><u>Vasu Jay Study Guides</u> &copy;Vasu Jayanthi 2019</h3>
+</fieldset>
+
+</body>
+
+</html>
