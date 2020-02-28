@@ -18,11 +18,17 @@
   "Tobacco tastes like tobacco"];
   
   function getQuote(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-  Quote = quotes[arrayNumber];
-  document.getElementById("phraseBox").innerHTML = Quote;
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	var arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+	var lastArrayNumber = 0;
+	if(arrayNumber == lastArrayNumber){
+		getQuote(0,quotes.length-1);
+	}else{
+		lastArrayNumber = arrayNumber
+		var Quote = quotes[arrayNumber];
+		document.getElementById("phraseBox").innerHTML = Quote;
+	}
   }
 
   
@@ -51,7 +57,7 @@
 
 <fieldset style="text-align: center;">
 <h1>Esanullah Phrase Machine</h1>
-<button onclick="getQuote(0,5);" type="button">Click Me!</button>
+<button onclick="getQuote(0,quotes.length-1);" type="button">Click Me!</button>
 <h3 id="phraseBox"></h3>
 </fieldset>
 
