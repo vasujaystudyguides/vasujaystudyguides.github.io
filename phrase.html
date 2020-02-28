@@ -14,10 +14,10 @@
  
 <script>
   var quotes = ["Why is the Amazon rainforest burning? Fire", "Why do you drink black coffee? It doesn't even taste like coffee.",
-  "You can grow bananas?", "How do you get to Hawaii? Build a highway.", "How did coronavirus gey to Italy? Airplane Diffusion",
+  "You can grow bananas?", "How do you get to Hawaii? Build a highway.", "How did coronavirus get to Italy? Airplane Diffusion",
   "Tobacco tastes like tobacco"];
   
-  function getQuote(min, max) {
+  function getEQuote(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	var arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -25,10 +25,22 @@
 	document.getElementById("phraseBox").innerHTML = Quote;
 	console.log(arrayNumber);
   }
-
-  
 </script>
  
+<script>
+  var quotesAny = ["It ain't over till it's over. ~ Yogi Berra", "It's like déjà vu all over again. ~ Yogi Berra",
+  "You can observe a lot by just watching. ~ Yogi Berra", "The future ain't what it used to be. ~ Yogi Berra",
+  "A nickel ain't worth a dime anymore. ~ Yogi Berra", "I Really Didn’t Say Everything I Said. ~ Yogi Berra"];
+  
+  function getAnyQuote(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	var arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+	var Quote = quotesAny[arrayNumber];
+	document.getElementById("phraseBoxAny").innerHTML = Quote;
+	console.log(arrayNumber);
+  }
+</script>
 
 <body>
 
@@ -52,8 +64,16 @@
 
 <fieldset style="text-align: center;">
 <h1>Esanullah Phrase Machine</h1>
-<button onclick="getQuote(0,quotes.length-1);" type="button">Click Me!</button>
+<button onclick="getEQuote(0,quotes.length-1);" type="button">Click Me!</button>
 <h3 id="phraseBox"></h3>
+</fieldset>
+
+<br>
+
+<fieldset style="text-align: center;">
+<h1>Similar-To-Esanullah Phrase Machine</h1>
+<button onclick="getAnyQuote(0,quotesAny.length-1);" type="button">Click Me!</button>
+<h3 id="phraseBoxAny"></h3>
 </fieldset>
 
 <br>
