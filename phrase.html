@@ -21,15 +21,9 @@
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	var arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-	var lastArrayNumber = 0;
-	if(arrayNumber == lastArrayNumber){
-		getQuote(0,quotes.length-1);
-	}else{
-		lastArrayNumber = arrayNumber
-		var Quote = quotes[arrayNumber];
-		document.getElementById("phraseBox").innerHTML = Quote;
-		console.log(arrayNumber);
-	}
+	var Quote = quotes[arrayNumber];
+	document.getElementById("phraseBox").innerHTML = Quote;
+	console.log(arrayNumber);
   }
 
   
