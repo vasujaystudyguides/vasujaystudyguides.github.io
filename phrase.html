@@ -22,8 +22,7 @@
   max = Math.floor(max);
   arrayNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   Quote = quotes[arrayNumber];
-  document.getElementById("p1").innerHTML = Quote;
-  getQuote(0,6);
+  document.getElementById("phraseBox").innerHTML = Quote;
   }
 
   
@@ -52,7 +51,7 @@
 
 <fieldset style="text-align: center;">
 <h1 id="APworld">Esanullah Phrase Machine</h1>
-	
+<button onclick="getQuote(0,5);" type="button">Click Me!</button>
 <h3 id="phraseBox">	</h3>
 </fieldset>
 
